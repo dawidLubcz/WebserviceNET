@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53295/matrixService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/serviceCommon" />
+  <xs:import schemaLocation="http://localhost:53295/matrixService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Zadanie_3" />
+  <xs:element name="generateMatrixM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="a_out_Matrix" nillable="true" type="q1:CMatrix" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="generateMatrixMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="generateMatrixMResult" type="q2:sServiceResp" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="a_out_Matrix" nillable="true" type="q3:CMatrix" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="generateMatrixID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="x" type="xs:int" />
+        <xs:element minOccurs="0" name="y" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="generateMatrixIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="generateMatrixIDResult" type="q4:sServiceRespExt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multipleMatrixM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="a_oMatrix1" nillable="true" type="q5:CMatrix" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="a_oMatrix2" nillable="true" type="q6:CMatrix" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="a_outMatrixRes" nillable="true" type="q7:CMatrix" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Zadanie_3" minOccurs="0" name="a_fFlag" type="q8:eParallel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multipleMatrixMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="multipleMatrixMResult" type="q9:sServiceResp" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="a_outMatrixRes" nillable="true" type="q10:CMatrix" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multipleMatrixID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="a_iID1" type="xs:int" />
+        <xs:element minOccurs="0" name="a_iID2" type="xs:int" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Zadanie_3" minOccurs="0" name="a_fFlag" type="q11:eParallel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multipleMatrixIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/serviceCommon" minOccurs="0" name="multipleMatrixIDResult" type="q12:sServiceRespExt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

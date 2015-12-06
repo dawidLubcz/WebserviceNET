@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8fc11f97-d40a-4dbb-ae82-eb0b4270baf2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53380/matrixGen.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="matrixGen.xsd" MetadataType="Schema" ID="c07e0319-b6a9-49fd-abd2-fb5c9e07ba2f" SourceId="1" SourceUrl="http://localhost:53380/matrixGen.svc?xsd=xsd3" />
+    <MetadataFile FileName="matrixGen1.xsd" MetadataType="Schema" ID="b43b3583-34b9-45d4-9056-4a4a57d9a334" SourceId="1" SourceUrl="http://localhost:53380/matrixGen.svc?xsd=xsd2" />
+    <MetadataFile FileName="matrixGen2.xsd" MetadataType="Schema" ID="8bf043d2-0470-4683-96fc-3207857acd0a" SourceId="1" SourceUrl="http://localhost:53380/matrixGen.svc?xsd=xsd1" />
+    <MetadataFile FileName="matrixGen3.xsd" MetadataType="Schema" ID="9b8545ea-985d-4f36-ac5c-707156b8519e" SourceId="1" SourceUrl="http://localhost:53380/matrixGen.svc?xsd=xsd0" />
+    <MetadataFile FileName="CMatrixGen.wsdl" MetadataType="Wsdl" ID="44a8de01-cfbb-4ec6-ab89-b3e97a1f1aed" SourceId="1" SourceUrl="http://localhost:53380/matrixGen.svc?wsdl" />
+    <MetadataFile FileName="matrixGen.disco" MetadataType="Disco" ID="2e5f3f4d-5068-48ce-8798-d163a0e5ac3b" SourceId="1" SourceUrl="http://localhost:53380/matrixGen.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

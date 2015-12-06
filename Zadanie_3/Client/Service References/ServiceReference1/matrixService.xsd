@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Zadanie_3" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Zadanie_3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="eParallel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EP_NO" />
+      <xs:enumeration value="EP_YES" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eParallel" nillable="true" type="tns:eParallel" />
+</xs:schema>

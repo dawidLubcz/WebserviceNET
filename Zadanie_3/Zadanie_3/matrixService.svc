@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Zadanie_3.Service1" CodeBehind="matrixService.svc.cs" %>
